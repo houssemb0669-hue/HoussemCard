@@ -1,5 +1,4 @@
 import { Phone, MessageCircle, Recycle } from "lucide-react";
-import { QRCodeSVG } from "qrcode.react";
 import "./index.css";
 
 function App() {
@@ -60,25 +59,6 @@ function App() {
         <div className="future">
           <span>روابط التواصل</span>
           <small>سيتم إضافة فيسبوك وتيك توك وغيرها لاحقًا</small>
-        </div>
-
-        <div className="qr-section">
-          <div className="qr-box">
-            <QRCodeSVG
-              value="https://houssemb0669-hue.github.io/HoussemCard/"
-              size={180}
-              level="H"
-              includeMargin={true}
-            />
-          </div>
-
-          <div className="qr-title">
-            امسح الرمز لفتح البطاقة
-          </div>
-
-          <div className="qr-subtitle">
-            HoussemCard
-          </div>
         </div>
 
         <div className="footer">
