@@ -264,3 +264,28 @@ p {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.55);
 }
+
+/* Share button */
+.contact-button.share {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: right;
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+  color: #ffffff;
+}
+
+.contact-button.share:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.contact-button.share .button-text strong,
+.contact-button.share .button-text small {
+  color: #ffffff;
+}
+
+.contact-button.share .button-icon {
+  color: #ffffff;
+}
