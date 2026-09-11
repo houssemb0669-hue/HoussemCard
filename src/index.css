@@ -228,3 +228,39 @@ p {
     min-height: 68px;
   }
 }
+
+
+/* QR Code */
+.qr-section {
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  text-align: center;
+}
+
+.qr-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+}
+
+.qr-box svg {
+  display: block;
+}
+
+.qr-title {
+  margin-top: 13px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.qr-subtitle {
+  margin-top: 5px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+}
