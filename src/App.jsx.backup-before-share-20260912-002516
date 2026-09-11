@@ -1,4 +1,4 @@
-import { Phone, MessageCircle, Recycle, Share2 } from "lucide-react";
+import { Phone, MessageCircle, Recycle } from "lucide-react";
 import { QRCodeSVG } from "qrcode.react";
 import "./index.css";
 
@@ -54,41 +54,6 @@ function App() {
               <small>تواصل معي عبر واتساب</small>
             </span>
           </a>
-
-          <button
-            className="contact-button share"
-            type="button"
-            onClick={async () => {
-              const shareData = {
-                title: "Houssem - شراء الحديد والبلاستيك",
-                text: "بطاقة حسام - شراء الحديد والبلاستيك",
-                url: "https://houssemb0669-hue.github.io/HoussemCard/",
-              };
-
-              if (navigator.share) {
-                try {
-                  await navigator.share(shareData);
-                } catch (error) {
-                  if (error.name !== "AbortError") {
-                    await navigator.clipboard.writeText(shareData.url);
-                    alert("تم نسخ رابط البطاقة");
-                  }
-                }
-              } else {
-                await navigator.clipboard.writeText(shareData.url);
-                alert("تم نسخ رابط البطاقة");
-              }
-            }}
-          >
-            <span className="button-icon">
-              <Share2 size={24} />
-            </span>
-
-            <span className="button-text">
-              <strong>مشاركة البطاقة</strong>
-              <small>شارك البطاقة مع الآخرين</small>
-            </span>
-          </button>
 
         </div>
 
