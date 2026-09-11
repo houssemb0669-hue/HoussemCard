@@ -1,0 +1,32 @@
+import { Phone, MessageCircle } from "lucide-react";
+import "./index.css";
+
+function App() {
+  const phone = "0669877641";
+
+  return (
+    <main className="page">
+      <section className="card">
+        <div className="icon">♻️</div>
+
+        <h1>Houssem</h1>
+
+        <h2>شراء الحديد والبلاستيك</h2>
+
+        <p>نشتري الحديد والبلاستيك بمختلف أنواعه</p>
+
+        <a className="call-button" href={`tel:${phone}`}>
+          <Phone size={22} />
+          <span>اتصل بي</span>
+        </a>
+
+        <div className="future-links">
+          <MessageCircle size={18} />
+          <span>روابط التواصل ستضاف لاحقًا</span>
+        </div>
+      </section>
+    </main>
+  );
+}
+
+export default App;
